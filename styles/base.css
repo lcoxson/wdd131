@@ -1,0 +1,140 @@
+/*
+FONTS:
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+COLORS:
+    --primary-100:#8C3A3A;  Dark pink
+    --primary-200:#c06764;  Med pink
+    --primary-300:#ffc8c2;  Light pink
+    --accent-100:#5E8B7E;   Light green
+    --accent-200:#043429;   Med green
+    --text-100:#FFFFFF;     White
+    --text-200:#e0e0e0;     Light gray
+    --text-300:#021f18;     Dark green
+    --bg-100:#F9E4B7;       Light yellow
+    --bg-200:#efdaad;       Med yellow
+    --bg-300:#c5b287;       Dark yellow  
+    */
+
+
+body {
+    background-color: #F9E4B7;
+    color: #021f18; 
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #8C3A3A;
+    color: #e0e0e0;
+    display: grid;
+}
+
+h1 {
+    color: #e0e0e0;
+    font-weight: 200;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
+nav {
+    background-color: #c06764;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration-line: none;
+}
+
+nav a:hover {
+    background-color: #8C3A3A;
+}
+
+main {
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template: 1 / 3;
+}
+
+img {
+    padding: 1em;
+    background: 1em #043429;
+    border: .5em solid #5E8B7E;
+    max-width: 500px;
+}
+
+.card {
+    border: .5em double #c5b287;
+    background-color: #F9E4B7;
+    color: #021f18;
+    display: grid;
+}
+
+.card p {
+    margin: 1em;
+}
+
+#about {
+    grid-column-start: 1 / 3;
+    grid-template: 4 / 3; 
+}
+
+#profile {
+   grid-row: 2/3;
+   grid-column: 1/2; 
+}
+
+h2 {
+    background-color: #043429;
+    border: .25em solid #5E8B7E;
+    color: #e0e0e0;
+    font-weight: 200;
+}
+
+h3 {
+    background-color: #8C3A3A;
+    border: .25em solid #c06764;
+    color: #e0e0e0;
+    font-weight: 200;
+}
+
+#resources {
+    grid-column: 3/4;
+}
+
+.card a {
+    background-color: #8C3A3A;
+    padding: .25em;
+    border: .25em solid #c06764;
+    color: #e0e0e0;
+    font-size: small;
+    font-weight: 400;
+    text-decoration-line: none;
+    
+}
+
+.card a:hover{
+    background-color: #c06764;
+}
+
+footer {
+    padding: 1em; 
+    background-color: #043429;
+    color: #e0e0e0;
+}

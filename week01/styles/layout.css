@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.header {
+    grid-column: 1/5;
+    margin: 0;
+    background-color: #333333;
+    color: white;
+}
+
+nav {
+    grid-column: 1 / 5;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+nav p {
+    text-align: center;
+    flex: initial;
+}
+
+.main {
+    background-color: lightgray;
+    grid-column: 1/4;
+}
+
+.footer {
+    background-color: #333333;
+    color: white;
+    grid-column: 1/5;
+}
